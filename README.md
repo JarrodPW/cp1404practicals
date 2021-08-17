@@ -2,4 +2,4 @@
 cp1404 practicals
 
 
-My CP1404 practicals
+Jarrod Payne Watson - CP1404 practicals
