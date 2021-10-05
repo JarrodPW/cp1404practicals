@@ -27,6 +27,7 @@ def main():
     print(limo.odometer)
     # 8.
     print(limo.__str__())
+    # print(limo)
 
 
 main()

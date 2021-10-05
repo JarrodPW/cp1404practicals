@@ -9,7 +9,7 @@ class Car:
 
         fuel: float, one unit of fuel drives one kilometre
         """
-        self.name = name        # 7.
+        self.name = name  # 7.
         self.fuel = fuel
         self.odometer = 0
 
