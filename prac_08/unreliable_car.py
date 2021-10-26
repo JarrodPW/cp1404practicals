@@ -20,12 +20,7 @@ class UnreliableCar(Car):
         or drive until fuel runs out return the distance actually driven.
         """
         if random.randint(0, 100) < self.reliability:
-            distance = 0
+            distance_driven = 0
         else:
-            if distance > self.fuel:
-                distance = self.fuel
-                self.fuel = 0
-            else:
-                self.fuel -= distance
-        self.odometer += distance
-        return distance
+            distance_driven = super().drive(distance)
+        return distance_driven

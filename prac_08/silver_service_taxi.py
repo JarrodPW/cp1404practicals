@@ -6,8 +6,7 @@ from prac_08.taxi import Taxi
 
 
 class SilverServiceTaxi(Taxi):
-
-    price_per_km = 1.23
+    price_per_km = 1.23  # not necessary, inherited from taxi
     flagfall = 4.5
 
     def __init__(self, name, fuel, fanciness=0):
@@ -21,4 +20,3 @@ class SilverServiceTaxi(Taxi):
     def __str__(self):
         """Return a string like a Car but with current fare distance."""
         return f"{super().__str__()} plus flagfall of {self.flagfall:.2f}"
-
