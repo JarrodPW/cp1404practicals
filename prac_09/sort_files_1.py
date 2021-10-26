@@ -17,6 +17,8 @@ def main():
 
     for filename in os.listdir('.'):
         directory = filename.split('.')[-1]
+        if os.path.isdir(filename):
+            continue
         try:
             os.mkdir(directory)
         except FileExistsError:
